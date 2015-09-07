@@ -1,0 +1,77 @@
+# Site Settings
+title: 인코어드 테크놀로지스 기술 블로그
+email: 
+description: "인코어드 테크놀로지스 기술 블로그"
+url: "https://encored-tech.github.io"
+github_username: encored-tech
+
+# Where things are
+source:      .
+posts:       ./_posts
+destination: ./_site
+layouts:     ./_layouts
+includes:    ./_includes
+collections: null
+
+# Handling Reading
+safe:         false
+include:      [".htaccess", "Gemfile", "Gemfile.lock"]
+exclude:      ["newpost", "publish", "start", "stop"]
+keep_files:   [".git", ".svn"]
+encoding:     "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Filtering Content
+show_drafts: null
+#limit_posts: 0
+future:      false
+unpublished: false
+
+# Plugins
+whitelist: []
+gems:
+- jekyll-mentions
+- jekyll-redirect-from
+- jekyll-sitemap
+- jekyll-feed
+- emoji
+
+# Conversion
+markdown:    kramdown
+highlighter: pygments
+lsi:         false
+excerpt_separator: "\n\n"
+
+# Serving
+detach:  false
+port:    4000
+host:    0.0.0.0
+baseurl: "" # does not include hostname
+
+# Backwards-compatibility
+relative_permalinks: false
+
+# Outputting
+permalink: "/:year-:month-:day-:title.html"
+paginate: 10
+paginate_path: "/page:num/"
+timezone: "Asia/Seoul"
+
+quiet:    false
+defaults: []
+
+# Markdown Processors
+rdiscount:
+  extensions: []
+
+redcarpet:
+  extensions: []
+
+kramdown:
+  auto_ids:       false
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     2..3
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
